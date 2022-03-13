@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "8ieps/VAsyO+PmkhOlZqLZpxDNoLo3gh5necjaBAM4l6OWoEwv/oEJqUKDtDAYc5pHLbhSyl59792r34TQNiaA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aishwarya Hutagi\\source\\repos\\MenuItemListing\\MenuItemListing\\MenuItemListing.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aishwarya Hutagi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
