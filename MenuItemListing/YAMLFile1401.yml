@@ -1,0 +1,35 @@
+﻿apiVersion: apps/v1
+
+kind: Deployment
+metadata:
+  name: menuitemlisting-deployment
+  labels:
+    app: MenuItemListing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: MenuItemListing 
+  template:
+    metadata:
+      labels:
+        app: MenuItemListing
+    spec:
+      containers:
+      - name: cloudcontainerregistryn1401
+        image: cloudcontainerregistryn1401.azurecr.io/cloudcontainerrepoo1401:latest
+        ports:
+        - containerPort: 8080
+      imagePullSecrets:
+      - name: webapisvcsecret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: menuitemlisting
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+  selector:
+    app: MenuItemListing
